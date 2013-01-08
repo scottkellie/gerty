@@ -1,14 +1,13 @@
-var app = require('express')(),
- server = require('http').createServer(app),
-     io = require('socket.io').listen(server),
-   five = require('johnny-five'),
-   board , led;
+var express = require('express'),
+        app = express(),
+     server = require('http').createServer(app),
+         io = require('socket.io').listen(server),
+       five = require('johnny-five'),
+       board , led;
 
 server.listen(8080);
 
-app.get('/*.(js|css)', function (req, res){
-  res.sendfile(__dirname + req.url);
-});
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
