@@ -1,0 +1,38 @@
+@import 'nib'
+@import url('http://fonts.googleapis.com/css?family=Cabin:700')
+
+global-reset()
+
+*
+  box-sizing border-box
+
+body
+  font-size 14px
+
+.btn
+  background linear-gradient(top, #cbd9de, #6d95a2)
+  box-shadow #eaf0f2 0 1px 1px 0 inset, #607680 0 -1px 0 0 inset
+  display block
+  text-align center
+  text-transform uppercase
+  font-family 'Cabin'
+  font-weight 700
+  font-size 1em
+  font-weight bold
+  color black
+  text-shadow #cfdce1 0 1px 0
+  text-decoration none
+  -o-border-radius 5px
+  border-radius 5px
+  border 1px solid #495255
+  padding 5px 1em
+  margin 100px auto
+  &:hover
+    background linear-gradient(top, #dae4e8, #7da0ac)
+    box-shadow #eaf0f2 0 1px 1px 0 inset, #607680 0 -1px 0 0 inset
+  &:active 
+    background linear-gradient(bottom, #8dabb6, #7da0ac)
+    box-shadow #608896 0 1px 1px 0 inset, #385058 0 1px 0 0 inset
+    text-shadow #b8cbd3 0 1px 0
+
+

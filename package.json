@@ -1,12 +1,15 @@
 {
-  "name": "johnny-five-io",
+  "name": "gerty",
   "version": "0.0.0",
   "description": "Browser interface for Johnny-Five",
   "main": "script.js",
   "dependencies": {
     "johnny-five": "*",
     "socket.io": "*",
-    "express": "*"
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
   },
   "devDependencies": {},
   "scripts": {
