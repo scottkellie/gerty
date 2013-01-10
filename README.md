@@ -1,4 +1,3 @@
-johnny-five-io
-==============
+# Gerty
 
-Browser Interface for Johnny-Five
+	Browser interface for [Johnny-Five](https://github.com/rwldrn/johnny-five).
