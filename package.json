@@ -1,0 +1,20 @@
+{
+  "name": "gerty",
+  "version": "0.0.0",
+  "description": "Browser interface for Johnny-Five",
+  "main": "lib/gerty",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodeunit test/app.js"
+  },
+  "repository": "",
+  "author": "Corey Daniels",
+  "license": "MIT"
+}
