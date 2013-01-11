@@ -1,30 +1,20 @@
 var gerty = require('../lib/gerty.js'),
      five = require('johnny-five'),
-     board , led, button;
+     dashboard, board, led, button;
 
-gerty.createDashboard();
-
+dashboard = new gerty.Dashboard(8080);
 board = new five.Board();
 
 board.on("ready", function() {
   led = new five.Led(13);
 
-/* Here's how it should work:
--------------------------------------
+//   How it should work:
+//   -------------------------------------
+//   button = new gerty.Button();
 
-  button = new gerty.Button();
+//   button.on("down", function(){
+//     console.log("Button clicked!");
+//   });
 
-  button.on("down", function(){
-    led.toggle();
-  });
-
--------------------------------------
-*/
-
-  led.on();
-
-  this.wait( 3000, function() {
-    led.off();
-  });
 
 });
